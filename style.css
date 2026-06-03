@@ -876,11 +876,18 @@ padding-top:120px;
 }
 
 .hero-visual{
-width:280px;
-height:280px;
+width:100%;
+max-width:320px;
 margin:60px auto;
-}
+    
+display:flex;
+justify-content:center;
+align-items:center;
 
+position:relative;
+left:-30px;
+}
+   
 .orbit-1{
 width:280px;
 height:280px;
