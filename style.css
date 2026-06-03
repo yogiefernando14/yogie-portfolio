@@ -803,3 +803,42 @@ height:180px;
 }
 
 }
+
+@media (max-width: 768px){
+
+.hero{
+padding-top:120px;
+}
+
+.hero-visual{
+width:280px;
+height:280px;
+margin:60px auto;
+}
+
+.orbit-1{
+width:280px;
+height:280px;
+}
+
+.orbit-2{
+width:200px;
+height:200px;
+}
+
+.center-core{
+width:100px;
+height:100px;
+}
+
+.core-text{
+font-size:36px;
+}
+
+.orb{
+width:55px;
+height:55px;
+font-size:12px;
+}
+
+}
