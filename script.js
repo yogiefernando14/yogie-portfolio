@@ -350,26 +350,17 @@ document.querySelector(".menu-toggle");
 const navLinksMenu =
 document.querySelector(".nav-links");
 
-menuToggle.addEventListener(
-"click",
-()=>{
+if(menuToggle && navLinksMenu){
 
-navLinksMenu.classList.toggle(
-"active"
-);
+menuToggle.addEventListener("click",()=>{
 
-if(navLinksMenu.classList.contains("active")){
+navLinksMenu.classList.toggle("active");
 
-menuToggle.textContent = "✕";
-
-}else{
-
-menuToggle.textContent = "☰";
+});
 
 }
 
-}   
-);
+
 
 document
 .querySelectorAll(".nav-link")
