@@ -335,91 +335,32 @@ document.body.style.opacity =
    ACTIVE NAVIGATION
 ========================= */
 
-const sections =
-document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
 
-const navLinks =
-document.querySelectorAll(".nav-links a");
-
-window.addEventListener(
-"scroll",
-()=>{
+window.addEventListener("scroll", () => {
 
 let current = "";
 
-sections.forEach((section)=>{
+sections.forEach((section) => {
 
-const sectionTop =
-section.offsetTop - 150;
+const sectionTop = section.offsetTop - 200;
 
-if(window.scrollY >= sectionTop){
+if (window.scrollY >= sectionTop) {
+            current = section.id;
+        }
 
-current =
-section.getAttribute("id");
+    });
 
-}
+    navLinks.forEach((link) => {
 
-});
+        link.classList.remove("active");
 
-navLinks.forEach((link)=>{
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
 
-link.classList.remove("active");
-
-if(
-link.getAttribute("href")
-=== "#" + current
-){
-
-link.classList.add("active");
-
-}
+    });
 
 });
 
-/* =========================
-   ACTIVE NAVIGATION
-========================= */
-
-const sections =
-document.querySelectorAll("section");
-
-const navLinks =
-document.querySelectorAll(".nav-links a");
-
-window.addEventListener(
-"scroll",
-()=>{
-
-let current = "";
-
-sections.forEach((section)=>{
-
-const sectionTop =
-section.offsetTop - 150;
-
-if(window.scrollY >= sectionTop){
-
-current =
-section.getAttribute("id");
-
-}
-
-});
-
-navLinks.forEach((link)=>{
-
-link.classList.remove("active");
-
-if(
-link.getAttribute("href")
-=== "#" + current
-){
-
-link.classList.add("active");
-
-}
-
-});
-
-}
-);
