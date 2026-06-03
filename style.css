@@ -186,6 +186,17 @@ gap:50px;
 
 .hero-content{
 max-width:650px;
+flex:1;
+}
+
+.hero-visual{
+flex:1;
+position:relative;
+width:420px;
+height:420px;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .badge{
