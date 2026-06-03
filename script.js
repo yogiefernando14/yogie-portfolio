@@ -134,28 +134,7 @@ navbar.style.borderBottom =
    PARALLAX FLOAT
 ========================= */
 
-window.addEventListener(
-"mousemove",
-(e)=>{
 
-const x =
-(e.clientX / window.innerWidth) - 0.5;
-
-const y =
-(e.clientY / window.innerHeight) - 0.5;
-
-const heroVisual =
-document.querySelector(".hero-visual");
-
-if(heroVisual){
-
-heroVisual.style.transform =
-`translate(${x * 20}px, ${y * 20}px)`;
-
-}
-
-}
-);
 
 /* =========================
    PROJECT HOVER GLOW
@@ -239,8 +218,11 @@ const y =
 Math.sin(angle + offset)
 * radius;
 
-dot.style.transform =
-`translate(${x}px, ${y}px)`;
+dot.style.left =
+`calc(50% + ${x}px)`;
+
+dot.style.top =
+`calc(50% + ${y}px)`;
 
 }
 );
