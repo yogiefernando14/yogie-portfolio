@@ -218,11 +218,8 @@ const y =
 Math.sin(angle + offset)
 * radius;
 
-dot.style.left =
-`calc(50% + ${x}px)`;
-
-dot.style.top =
-`calc(50% + ${y}px)`;
+dot.style.transform =
+`translate(${x}px, ${y}px)`;
 
 }
 );
