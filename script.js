@@ -2,10 +2,7 @@
    TYPING EFFECT
 ========================= */
 
-const typingElement =
-document.getElementById("typing-text");
-
-const words = [
+const roles = [
 "Frontend Developer",
 "Web Designer",
 "Video Editor",
@@ -13,71 +10,33 @@ const words = [
 "Digital Entrepreneur"
 ];
 
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+const typingElement =
+document.getElementById("typing-text");
 
-function typeEffect(){
+let roleIndex = 0;
 
-const currentWord =
-words[wordIndex];
+setInterval(()=>{
 
-if(!deleting){
+typingElement.style.opacity = "0";
+
+setTimeout(()=>{
+
+roleIndex++;
+
+if(roleIndex >= roles.length){
+
+roleIndex = 0;
+
+}
 
 typingElement.textContent =
-currentWord.substring(
-0,
-charIndex + 1
-);
+roles[roleIndex];
 
-charIndex++;
+typingElement.style.opacity = "1";
 
-if(charIndex === currentWord.length){
+},400);
 
-deleting = true;
-
-setTimeout(
-typeEffect,
-1500
-);
-
-return;
-}
-
-}else{
-
-typingElement.textContent =
-currentWord.substring(
-0,
-charIndex - 1
-);
-
-charIndex--;
-
-if(charIndex === 0){
-
-deleting = false;
-
-wordIndex++;
-
-if(wordIndex >= words.length){
-
-wordIndex = 0;
-
-}
-
-}
-
-}
-
-setTimeout(
-typeEffect,
-deleting ? 50 : 120
-);
-
-}
-
-typeEffect();
+},2500);
 
 /* =========================
    REVEAL ANIMATION
