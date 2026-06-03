@@ -237,7 +237,6 @@ font-weight:500;
 min-height:50px;
 transition:opacity .4s ease;
 
-}
    
 height:40px;
 display:flex;
@@ -291,15 +290,6 @@ background:rgba(255,255,255,.05);
 /* =========================
    HUD CIRCLE
 ========================= */
-
-.hero-visual{
-position:relative;
-width:420px;
-height:420px;
-display:flex;
-justify-content:center;
-align-items:center;
-}
 
 .orbit{
 position:absolute;
