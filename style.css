@@ -200,13 +200,15 @@ flex:1;
 }
 
 .hero-visual{
-flex:1;
 position:relative;
 width:420px;
+min-width:420px;
 height:420px;
+min-height:420px;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
+flex:0 0 420px;
 }
 
 .badge{
