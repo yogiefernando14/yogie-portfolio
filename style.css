@@ -752,6 +752,15 @@ margin:0 auto;
 
 }
 
+.hero h2{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+} 
+
 .hero p{
 margin:0 auto;
 }
