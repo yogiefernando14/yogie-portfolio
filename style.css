@@ -338,10 +338,9 @@ animation:pulse 3s infinite;
 
 .core-text{
 color:black;
-font-weight:900;
-font-size:.9rem;
-letter-spacing:2px;
-text-transform:uppercase;
+font-weight:800;
+font-size:1rem;
+letter-spacing:1px;
 }
 
 @keyframes spin{
