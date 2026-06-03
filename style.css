@@ -171,6 +171,16 @@ transition:.3s;
 width:100%;
 }
 
+/* ACTIVE MENU */
+
+.nav-links a.active{
+color:white;
+}
+
+.nav-links a.active::after{
+width:100%;
+}
+
 /* =========================
    HERO
 ========================= */
