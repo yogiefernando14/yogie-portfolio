@@ -337,9 +337,55 @@ if (window.scrollY >= sectionTop) {
 
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
-        }
-
-    });
-
+}
 });
 
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuToggle =
+document.querySelector(".menu-toggle");
+
+const navLinksMenu =
+document.querySelector(".nav-links");
+
+menuToggle.addEventListener(
+"click",
+()=>{
+
+navLinksMenu.classList.toggle(
+"active"
+);
+
+if(navLinksMenu.classList.contains("active")){
+
+menuToggle.textContent = "✕";
+
+}else{
+
+menuToggle.textContent = "☰";
+
+}
+
+}   
+);
+
+document
+.querySelectorAll(".nav-link")
+.forEach(link=>{
+
+link.addEventListener(
+"click",
+()=>{
+
+navLinksMenu.classList.remove(
+"active"
+);
+
+menuToggle.textContent = "☰";
+
+}
+);
+
+});
