@@ -221,10 +221,12 @@ angle += 0.01;
 orbitDots.forEach(
 (dot,index)=>{
 
+const isMobile = window.innerWidth < 768;
+
 const radius =
-index % 2 === 0
-? 180
-: 130;
+isMobile
+? (index % 2 === 0 ? 140 : 95)
+: (index % 2 === 0 ? 180 : 130);
 
 const offset =
 index * (Math.PI * 2 / orbitDots.length);
