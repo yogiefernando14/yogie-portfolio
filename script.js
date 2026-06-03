@@ -225,7 +225,7 @@ const isMobile = window.innerWidth < 768;
 
 const radius =
 isMobile
-? (index % 2 === 0 ? 140 : 95)
+? (index % 2 === 0 ? 120 : 80)
 : (index % 2 === 0 ? 180 : 130);
 
 const offset =
