@@ -356,6 +356,62 @@ transform:scale(1);
 }
 
 /* =========================
+   ORBIT ORBS
+========================= */
+
+.orb{
+position:absolute;
+
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+color:#fff;
+
+font-size:11px;
+font-weight:700;
+
+box-shadow:
+0 0 20px rgba(255,255,255,.08);
+
+z-index:5;
+
+transition:.3s;
+}
+
+.orb:hover{
+transform:scale(1.15);
+box-shadow:
+0 0 30px rgba(255,255,255,.2);
+}
+
+.orb{
+flex-direction:column;
+gap:2px;
+}
+
+.orb span{
+font-size:12px;
+font-weight:700;
+}
+
+.orb small{
+font-size:8px;
+opacity:.7;
+}
+
+/* =========================
    SECTION
 ========================= */
 
