@@ -211,7 +211,11 @@ font-size:1.6rem;
 color:#b5b5b5;
 margin-bottom:25px;
 font-weight:500;
+min-height:50px;
+transition:opacity .4s ease;
 
+}
+   
 height:40px;
 display:flex;
 align-items:center;
