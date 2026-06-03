@@ -746,11 +746,13 @@ padding-top:120px;
 }
 
 .hero-content{
-max-width:100%;
+width:100%;
+text-align:center;
+
 }
 
 .hero p{
-margin:auto;
+margin:0 auto;
 }
 
 .hero-buttons{
