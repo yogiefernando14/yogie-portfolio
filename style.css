@@ -193,6 +193,13 @@ width:100%;
    HERO
 ========================= */
 
+.menu-toggle{
+display:none;
+color:white;
+font-size:28px;
+font-weight:700;
+cursor:pointer;
+
 .hero{
 min-height:100vh;
 display:flex;
