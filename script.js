@@ -337,7 +337,12 @@ if (window.scrollY >= sectionTop) {
 
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
-}
+         }
+         
+
+      
+});
+
 });
 
 /* =========================
