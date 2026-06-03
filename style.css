@@ -139,6 +139,14 @@ font-weight:800;
 letter-spacing:2px;
 }
 
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+z-index:1001;
+}
+
 .nav-links{
 display:flex;
 gap:30px;
@@ -790,8 +798,33 @@ width:90px;
 height:90px;
 }
 
+.menu-toggle{
+display:block;
+}
+
 .nav-links{
-display:none;
+position:fixed;
+top:0;
+right:-100%;
+width:260px;
+height:100vh;
+
+background:#0b0b0b;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+gap:30px;
+
+transition:.4s ease;
+
+z-index:1000;
+}
+
+.nav-links.active{
+right:0;
 }
 
 .section{
