@@ -227,7 +227,7 @@ index % 2 === 0
 : 130;
 
 const offset =
-index * Math.PI / 2;
+index * (Math.PI * 2 / orbitDots.length);
 
 const x =
 Math.cos(angle + offset)
