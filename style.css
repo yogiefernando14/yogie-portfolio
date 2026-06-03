@@ -324,23 +324,28 @@ animation:spinReverse 10s linear infinite;
 }
 
 .center-core{
-width:120px;
-height:120px;
-border-radius:50%;
+min-width:180px;
+height:70px;
+
+padding:0 25px;
+
+border-radius:999px;
+
 background:white;
+
 display:flex;
 justify-content:center;
 align-items:center;
+
 box-shadow:
 0 0 50px rgba(255,255,255,.25);
-animation:pulse 3s infinite;
 }
 
 .core-text{
 color:black;
-font-weight:800;
+font-weight:900;
 font-size:1rem;
-letter-spacing:1px;
+letter-spacing:2px;
 }
 
 @keyframes spin{
@@ -887,12 +892,14 @@ height:200px;
 }
 
 .center-core{
-width:100px;
-height:100px;
+min-width:130px;
+height:55px;
+padding:0 18px;
 }
 
 .core-text{
-font-size:36px;
+font-size:.75rem;
+letter-spacing:1px;
 }
 
 .orb{
