@@ -637,6 +637,43 @@ border-bottom:1px solid rgba(255,255,255,.05);
    PROJECTS
 ========================= */
 
+.project-filter{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.filter-btn{
+padding:12px 24px;
+border:none;
+border-radius:14px;
+
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+
+color:#9f9f9f;
+font-weight:600;
+cursor:pointer;
+
+transition:.3s;
+}
+
+.filter-btn:hover{
+color:white;
+background:rgba(255,255,255,.08);
+}
+
+.filter-btn.active{
+background:white;
+color:black;
+
+box-shadow:
+0 0 20px rgba(255,255,255,.15);
+}
+
 .projects-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
