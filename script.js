@@ -386,4 +386,43 @@ menuToggle.textContent = "☰";
 }
 );
 
+/* =========================
+   PROJECT FILTER
+========================= */
+
+const filterButtons =
+document.querySelectorAll(".filter-btn");
+
+const projectItems =
+document.querySelectorAll(".project-card");
+
+filterButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+filterButtons.forEach(btn=>
+btn.classList.remove("active")
+);
+
+button.classList.add("active");
+
+const filter =
+button.dataset.filter;
+
+projectItems.forEach(card=>{
+
+if(card.dataset.category === filter){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+});
+   
 });
