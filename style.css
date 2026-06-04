@@ -40,23 +40,21 @@ z-index:-5;
 content:"";
 position:absolute;
 border-radius:50%;
-filter:blur(180px);
+filter:blur(250px);
 animation:ambientMove 20s ease-in-out infinite;
 }
 
 .bg-gradient::before{
-width:800px;
-height:800px;
-
+width:1200px;
+height:1200px;
 background:rgba(255,255,255,.08);
-
 top:-250px;
 right:-150px;
 }
 
 .bg-gradient::after{
-width:700px;
-height:700px;
+width:1000px;
+height:1000px;
 
 background:rgba(255,255,255,.05);
 
