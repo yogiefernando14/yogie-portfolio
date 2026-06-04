@@ -832,6 +832,80 @@ font-size:.9rem;
 }
 
 /* =========================
+
+   CARD SHINE EFFECT
+
+========================= */
+
+.about-card,
+
+.service-card,
+
+.skill-card,
+
+.contact-card,
+
+.project-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.about-card::before,
+
+.service-card::before,
+
+.skill-card::before,
+
+.contact-card::before,
+
+.project-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.05),
+
+transparent
+
+);
+
+transition:.8s;
+
+}
+
+.about-card:hover::before,
+
+.service-card:hover::before,
+
+.skill-card:hover::before,
+
+.contact-card:hover::before,
+
+.project-card:hover::before{
+
+left:150%;
+
+}
+
+/* =========================
    FOOTER
 ========================= */
 
