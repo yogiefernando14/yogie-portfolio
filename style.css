@@ -32,17 +32,24 @@ width:100%;
 height:100%;
 
 background:
-radial-gradient(
-circle at 85% 20%,
-rgba(180,180,180,.10),
-transparent 25%
-),
 
 radial-gradient(
-circle at 20% 80%,
-rgba(120,120,120,.06),
+circle at 80% 20%,
+rgba(255,80,80,.12),
 transparent 35%
-),
+)
+
+radial-gradient(
+circle at 20% 30%,
+rgba(255,255,255,.05),
+transparent 40%
+)
+
+radial-gradient(
+circle at 50% 80%,
+rgba(255,255,255,.03),
+transparent 45%
+)
 
 #050505;
 
@@ -51,13 +58,26 @@ z-index:-5;
 
 .cursor-glow{
 position:fixed;
-width:300px;
-height:300px;
+width:500px;
+height:500px;
 border-radius:50%;
-background:rgba(255,255,255,.04);
-filter:blur(100px);
+
+background:
+radial-gradient(
+circle,
+rgba(255,255,255,.08) 0%,
+rgba(255,255,255,.04) 35%,
+transparent 70%
+);
+
+filter:blur(120px);
+
 pointer-events:none;
 z-index:-1;
+
+transition:
+left .08s linear,
+top .08s linear;
 }
 
 /* =========================
