@@ -30,9 +30,9 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-z-index:-5;
 overflow:hidden;
 background:#050505;
+z-index:-5;
 }
 
 .bg-gradient::before,
@@ -40,25 +40,46 @@ background:#050505;
 content:"";
 position:absolute;
 border-radius:50%;
-filter:blur(150px);
-animation:ambientMove 15s ease-in-out infinite;
+filter:blur(180px);
+animation:ambientMove 20s ease-in-out infinite;
 }
 
 .bg-gradient::before{
-width:600px;
-height:600px;
-background:rgba(255,40,40,.18);
-top:10%;
-right:-200px;
+width:800px;
+height:800px;
+
+background:rgba(255,255,255,.08);
+
+top:-250px;
+right:-150px;
 }
 
 .bg-gradient::after{
-width:500px;
-height:500px;
-background:rgba(255,80,80,.10);
-bottom:-100px;
-left:-100px;
-animation-delay:5s;
+width:700px;
+height:700px;
+
+background:rgba(255,255,255,.05);
+
+bottom:-200px;
+left:-150px;
+
+animation-delay:10s;
+}
+
+@keyframes ambientMove{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(-120px,80px);
+}
+
+100%{
+transform:translate(0,0);
+}
+
 }
 
 .cursor-glow{
