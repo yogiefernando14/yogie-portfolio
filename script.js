@@ -453,14 +453,47 @@ document.body.style.overflow = "auto";
 
 }
 
+/* =========================
+   HIREFLOW MODAL
+========================= */
+
+function openHireflowModal(){
+
+document
+.getElementById("hireflowModal")
+.classList.add("active");
+
+document.body.style.overflow = "hidden";
+
+}
+
+function closeHireflowModal(){
+
+document
+.getElementById("hireflowModal")
+.classList.remove("active");
+
+document.body.style.overflow = "auto";
+
+}
+
 window.addEventListener("click",(e)=>{
 
-const modal =
+const yogiezModal =
 document.getElementById("yogiezModal");
 
-if(e.target === modal){
+const hireflowModal =
+document.getElementById("hireflowModal");
+
+if(e.target === yogiezModal){
 
 closeYogiezModal();
+
+}
+
+if(e.target === hireflowModal){
+
+closeHireflowModal();
 
 }
 
