@@ -756,6 +756,23 @@ background:white;
 color:black;
 }
 
+.details-btn{
+padding:12px 18px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,.08);
+background:transparent;
+color:white;
+cursor:pointer;
+font-family:'Inter',sans-serif;
+font-size:14px;
+transition:.3s;
+}
+
+.details-btn:hover{
+background:white;
+color:black;
+}
+
 /* =========================
    CONTACT
 ========================= */
