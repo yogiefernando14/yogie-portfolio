@@ -1121,11 +1121,20 @@ transform:translateY(0) scale(1);
 opacity:1;
 }
 
-   .close-modal{
-float:right;
+.close-modal{
+position:absolute;
+top:20px;
+right:25px;
 font-size:32px;
+font-weight:700;
 cursor:pointer;
-margin-bottom:20px;
+color:#999;
+transition:.3s;
+}
+
+.close-modal:hover{
+color:white;
+transform:rotate(90deg);
 }
 
 /* =========================
