@@ -426,5 +426,40 @@ card.style.display = "none";
 });
 
 });
-   
+
+/* =========================
+   YOGIEZ MODAL
+========================= */
+
+function openYogiezModal(){
+
+document
+.getElementById("yogiezModal")
+.classList.add("active");
+
+document.body.style.overflow = "hidden";
+
+}
+
+function closeYogiezModal(){
+
+document
+.getElementById("yogiezModal")
+.classList.remove("active");
+
+document.body.style.overflow = "auto";
+
+}
+
+window.addEventListener("click",(e)=>{
+
+const modal =
+document.getElementById("yogiezModal");
+
+if(e.target === modal){
+
+closeYogiezModal();
+
+}
+
 });
