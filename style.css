@@ -773,6 +773,39 @@ background:white;
 color:black;
 }
 
+.project-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.project-tech{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+padding:15px 25px 0;
+}
+
+.project-tech span{
+padding:6px 12px;
+border-radius:999px;
+font-size:.75rem;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+color:#bdbdbd;
+}
+
+.project-card p{
+padding:0 25px;
+margin-top:10px;
+line-height:1.8;
+}
+
+.project-links{
+margin-top:10px;
+}
+
 /* =========================
    CONTACT
 ========================= */
@@ -1023,8 +1056,6 @@ opacity:1;
 transform:translateY(0);
 }
 
-}
-
 .modal{
 position:fixed;
 inset:0;
@@ -1261,37 +1292,4 @@ transform:translate(-80px,50px);
 transform:translate(0,0);
 }
 
-}
-
-.project-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-}
-
-.project-tech{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-padding:15px 25px 0;
-}
-
-.project-tech span{
-padding:6px 12px;
-border-radius:999px;
-font-size:.75rem;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-color:#bdbdbd;
-}
-
-.project-card p{
-padding:0 25px;
-margin-top:10px;
-line-height:1.8;
-}
-
-.project-links{
-margin-top:10px;
 }
