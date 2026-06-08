@@ -907,8 +907,10 @@ box-shadow:
 
 }
 
-.contact-box span{
-font-size:28px;
+.contact-box i{
+font-size:30px;
+color:white;
+min-width:30px;
 }
 
 .contact-box h4{
