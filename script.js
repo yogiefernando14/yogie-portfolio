@@ -499,19 +499,3 @@ closeHireflowModal();
 
 });
 
-const featuredBtn =
-document.querySelector(".filter-btn");
-
-const projectsGrid =
-document.querySelector(".projects-grid");
-
-let hidden = false;
-
-featuredBtn.addEventListener("click",()=>{
-
-hidden = !hidden;
-
-projectsGrid.style.display =
-hidden ? "none" : "grid";
-
-});
